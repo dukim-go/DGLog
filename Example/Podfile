@@ -1,0 +1,16 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+workspace 'DGLogExample'
+project 'iOS Example/iOS Example.xcodeproj'
+
+target 'iOS Example' do
+  pod 'DGLog', :path => '../'
+
+  platform :ios, '8.0'
+  
+  use_frameworks!
+
+  # Pods for iOS Example
+
+end
