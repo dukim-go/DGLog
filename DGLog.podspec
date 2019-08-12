@@ -27,7 +27,7 @@ Pod::Spec.new do |spec|
   # spec.description  = <<-DESC
                    # DESC
 
-  spec.homepage     = 'https://https://github.com/dukim-go/DGLog'
+  spec.homepage     = 'https://github.com/dukim-go/DGLog/'
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -90,11 +90,12 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "DGLog/Classes/**/*"
+  spec.source_files  = "DGLog/Classes"
   # spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
 
+  spec.swift_version = "5.0"
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
