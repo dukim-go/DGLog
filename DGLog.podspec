@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "DGLog"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "Swift 5 DGLog."
 
   # This description is used to generate tags and improve search results.
@@ -27,7 +27,7 @@ Pod::Spec.new do |spec|
   # spec.description  = <<-DESC
                    # DESC
 
-  spec.homepage     = 'https://github.com/dukim-go/DGLog/'
+  spec.homepage     = 'https://github.com/dukim-go/DGLog'
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -39,9 +39,8 @@ Pod::Spec.new do |spec|
   #
 
   spec.license      = { :type => 'MIT', :file => 'LICENSE' }
-  # spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
-
-
+  
+  
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  Specify the authors of the library, with email addresses. Email addresses
@@ -68,7 +67,7 @@ Pod::Spec.new do |spec|
 
   #  When using multiple platforms
   spec.ios.deployment_target = "8.0"
-  spec.osx.deployment_target = "10.14"
+  spec.osx.deployment_target = "10.12"
   # spec.watchos.deployment_target = "2.0"
   # spec.tvos.deployment_target = "9.0"
 
