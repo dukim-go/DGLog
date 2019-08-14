@@ -8,7 +8,7 @@ abstract_target 'DGLog' do
     project 'iOS Example/iOS Example.xcodeproj'
     platform :ios, '8.0'
   
-    pod 'DGLog', :path => '../'
+    pod 'DGLog', :path => '../', :testspecs => ['UnitTests', 'UITests'] 
   
     use_frameworks!
   end
@@ -17,7 +17,7 @@ abstract_target 'DGLog' do
     project 'OSX Example/OSX Example.xcodeproj'
     platform :osx, '10.14'
   
-    pod 'DGLog', :path => '../'
+    pod 'DGLog', :path => '../', :testspecs => ['UnitTests', 'UITests'] 
   
     use_frameworks!
   end

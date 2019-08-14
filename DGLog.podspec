@@ -89,7 +89,7 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "DGLog/Classes/**/*"
+  spec.source_files  = "DGLog/Classes/**/*.{swift}"
   # spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
@@ -139,5 +139,24 @@ Pod::Spec.new do |spec|
   #
   # Pod library project settings 
   spec.pod_target_xcconfig = { "APPLICATION_EXTENSION_API_ONLY" => "YES" }
+
+  # ――― Pod Test Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+  #
+  # Pod Test project settings 
+  # Unit Tests
+  spec.test_spec 'UnitTests' do |test_spec|
+    # test_spec.requires_app_host = true
+    test_spec.test_type = :unit
+    # test_spec.test_type = :ui
+    test_spec.source_files = "Tests/UnitTests/**/*.{swift}"
+  end
+
+  # UI Tests
+  spec.test_spec 'UITests' do |test_spec|
+    # test_spec.requires_app_host = true
+    # test_spec.test_type = :unit
+    test_spec.test_type = :ui
+    test_spec.source_files = "Tests/UITests/**/*.{swift}"
+  end
 
 end
