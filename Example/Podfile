@@ -1,17 +1,25 @@
-workspace 'DGLog'
+workspace 'DGLogExample'
 
-pod 'DGLog', :path => '../'
+abstract_target 'DGLog' do
 
-target 'iOS Example' do
-  project 'iOS Example/iOS Example.xcodeproj'
-  platform :ios, '8.0'
+  pod 'DGLog', :path => '../'
+
+  target 'iOS Example' do
+    project 'iOS Example/iOS Example.xcodeproj'
+    platform :ios, '8.0'
   
-  use_frameworks!
-end
-
-target 'OSX Example' do
-  project 'OSX Example/OSX Example.xcodeproj'
-  platform :osx, '10.14'
-
-  use_frameworks!
+    pod 'DGLog', :path => '../'
+  
+    use_frameworks!
+  end
+  
+  target 'OSX Example' do
+    project 'OSX Example/OSX Example.xcodeproj'
+    platform :osx, '10.14'
+  
+    pod 'DGLog', :path => '../'
+  
+    use_frameworks!
+  end
+  
 end
