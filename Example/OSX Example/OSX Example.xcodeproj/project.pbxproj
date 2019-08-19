@@ -91,7 +91,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1030;
 				LastUpgradeCheck = 1030;
-				ORGANIZATIONNAME = "com.dukim-go";
+				ORGANIZATIONNAME = Horing;
 				TargetAttributes = {
 					0B9F13CC2301847A001112CB = {
 						CreatedOnToolsVersion = 10.3;
