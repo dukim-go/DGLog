@@ -2,7 +2,7 @@
 //  DGLogUnitTests.swift
 //  DGLog-iOS-Unit-Tests
 //
-//  Created by ahnlab_dukim on 14/08/2019.
+//  Created by horing on 14/08/2019.
 //
 
 import XCTest

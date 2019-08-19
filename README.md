@@ -10,7 +10,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 # Requirements
 
-- iOS 8.0+ / macOS 10.14+
+- iOS 8.0+ / macOS 10.12+
 - Xcode 10.2+
 - Swift 5+
 
@@ -27,7 +27,7 @@ pod 'DGLog'
 
 # Author
 
-Daeung Kim, dukim.dev@gmail.com
+horing, dukim.dev@gmail.com
 
 # License
 

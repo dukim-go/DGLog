@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  OSX Example
 //
-//  Created by daeung Kim on 2019/08/12.
-//  Copyright © 2019 com.dukim-go. All rights reserved.
+//  Created by horing on 08/12/2019.
+//  Copyright © 2019 horing All rights reserved.
 //
 
 import Cocoa
