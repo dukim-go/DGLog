@@ -1,13 +1,18 @@
 import Foundation
 
 /// DGLogConfig
-public struct DGLogConfig {
+public enum DGLogConfig {
     public static var isVisible = true
     public static var isVisibleDate = true
     public static var isVisibleFile = true
     public static var isVisibleFunction = true
     public static var isVisibleLine = true
     public static var isVisibleMessage = true
+    public static var dateFormatter: DateFormatter = {
+        let result = DateFormatter()
+        result.dateFormat = "MM/dd/yyyy HH:mm:ss.SSS"
+        return result
+    }()
 }
 
 /// DGLog
@@ -26,14 +31,8 @@ public func DGLog(_ items: Any ..., file: String = #file, function: String = #fu
     
     var arr = [String]()
     
-    let formatter: DateFormatter = {
-        let result = DateFormatter()
-        result.dateFormat = "yyyy/MM/dd HH:mm:ss.SSS"
-        return result
-    }()
-    
     if config.isVisibleDate {
-        arr.append(formatter.string(from: Date()))
+        arr.append(DGLogConfig.dateFormatter.string(from: Date()))
     }
     if config.isVisibleFile, config.isVisibleFunction {
         arr.append("[\(URL(fileURLWithPath: file).lastPathComponent) \(function)]")

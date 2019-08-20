@@ -148,6 +148,7 @@ Pod::Spec.new do |spec|
     test_spec.test_type = :unit
     # test_spec.test_type = :ui
     test_spec.source_files = "Tests/UnitTests/**/*.{swift}"
+    test_spec.pod_target_xcconfig = { "APPLICATION_EXTENSION_API_ONLY" => "$(inherited)" }
   end
 
   # UI Tests
@@ -156,6 +157,7 @@ Pod::Spec.new do |spec|
     # test_spec.test_type = :unit
     test_spec.test_type = :ui
     test_spec.source_files = "Tests/UITests/**/*.{swift}"
+    test_spec.pod_target_xcconfig = { "APPLICATION_EXTENSION_API_ONLY" => "$(inherited)" }
   end
 
 end
