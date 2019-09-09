@@ -77,7 +77,8 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/dukim-go/DGLog.git", :tag => "#{spec.version}" }
+  # spec.source       = { :git => "https://github.com/dukim-go/DGLog.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/dukim-go/DGLog.git", :commit => "2032b98bc6541471b4ba3c809b76546de6ced6c3" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
