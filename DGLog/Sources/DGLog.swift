@@ -45,12 +45,25 @@ public func DGLog(_ items: Any ..., file: String = #file, function: String = #fu
         arr.append("(\(line))")
     }
     if config.isVisibleMessage {
-        arr.append(items.map({ String(describing: $0) }).joined(separator: " "))
+        let message = items.map({ String(describing: $0) }).joined(separator: " ")
+        // newline check
+        let isExistNewlines = message.first { (c) -> Bool in
+            var isContain = false
+            for unicodeScalar in c.unicodeScalars {
+                if CharacterSet.newlines.contains(unicodeScalar) {
+                    isContain = true
+                    break
+                }
+            }
+            return isContain
+        } != nil
+        let front = isExistNewlines ? "\n" : ""
+        arr.append(front + message)
     }
     if config.isVisible {
-        let message = arr.joined(separator: " ")
-        print(message)
-        return message
+        let total = arr.joined(separator: " ")
+        print(total)
+        return total
     } else {
         return ""
     }
